@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="/dashboard">MyWeb</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/user">Users</a></li>
+        <li><a routerLink="/admin">Admin</a></li>
+        <li class="active"><a routerLink="/students">Students</a></li>
+      </ul>
+      <button style="float: right;" (click)="logout()">Logout</button>
+    </div>
+  </nav>

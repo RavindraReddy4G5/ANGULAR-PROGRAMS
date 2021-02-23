@@ -1,0 +1,30 @@
+<app-header></app-header>
+<h1>Admin Component</h1>
+<button (click)="moveToAdd()">Add/Edit Admin</button>
+
+<ul>
+    <li *ngFor="let user of adminsUsers">
+        <span >{{user.name}} {{user.age}}    {{user.id}} {{user.role}}</span>
+        <span>{{user.name}} {{user.age}}    {{user.id}}  {{user.role}}</span>
+        <a [routerLink]="['/admin/admin-detail', user.id]">Details</a>
+    </li>
+</ul>
+<h1>Children component</h1>
+<router-outlet></router-outlet>
+
+
+
+employees
+
+add-emplyees edit-employees list-employees 
+
+
+
+
+
+
+name age slary desg  addreess  action                                +Add Employee
+
+test1  20  20000  s/w eng  123/34/222 hyd                                 Edit delete
+
+

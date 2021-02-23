@@ -1,0 +1,43 @@
+<app-header></app-header>
+<h1>User Component</h1>
+
+<ul>
+    <li *ngFor="let user of users">
+        <span >{{user.name}} {{user.age}}    {{user.id}}</span>
+        <span>{{user.name}} {{user.age}}    {{user.id}}</span>
+        <a [routerLink]="['/user-detail', user.id]">User Details</a>
+        <div *ngIf="user.payment;else notPaid">
+               <span>Already paid</span> 
+        </div>
+        <ng-template #notPaid>
+            <button>Pay Now</button>
+        </ng-template>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
